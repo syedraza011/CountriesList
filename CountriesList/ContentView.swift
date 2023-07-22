@@ -7,14 +7,17 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @StateObject var viewModel = CountriesViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+       
+            ForEach(viewModel.countries,id: \.self) { country in
+                Text(country.name)
+                    .foregroundColor(.black)
+            }
+ 
         .padding()
     }
 }
