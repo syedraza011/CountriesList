@@ -8,9 +8,13 @@
 import Foundation
 
 struct CountryResponse: Decodable,Identifiable,Hashable {
-  var id = UUID()
+  let id = UUID()
     let name: String
     let region:String
     let code: String
     let capital:String
 }
+//struct Countries: Decodable, Hashable {
+//    var countries: [CountryResponse]
+//}
+

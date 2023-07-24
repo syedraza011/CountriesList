@@ -1,0 +1,45 @@
+//
+//  stockFailure.json
+//  CashAppStocks
+//
+//  Created by Syed Raza on 7/14/23.
+//
+[
+  {
+    "capital": "Kabul",
+    "code": "AF",
+    "currency": {
+      "code": "AFN",
+      "name": "Afghan afghani",
+      "symbol": "؋"
+    },
+    "flag": "https://restcountries.eu/data/afg.svg",
+    "language": {
+      "code": "ps",
+      "name": "Pashto"
+    },
+    "name": "Afghanistan",
+    "region": "AS"
+  },
+  {
+    "capital": "Mariehamn",
+    "capital": "Mariehamn",
+    "code": "AX",
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "flag": "https://restcountries.eu/data/ala.svg",
+    "language": {
+      "code": "sv",
+      "name": "Swedish"
+    },
+    "name": "Åland Islands",
+    "name": "Another Name"
+

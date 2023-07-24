@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E99E2D0A2A6EE7D600C66FB6 /* countryDataSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = E99E2D072A6EE7D600C66FB6 /* countryDataSuccess.json */; };
+		E99E2D0B2A6EE7D600C66FB6 /* emptyData.json in Resources */ = {isa = PBXBuildFile; fileRef = E99E2D082A6EE7D600C66FB6 /* emptyData.json */; };
+		E99E2D0C2A6EE7D600C66FB6 /* countryDataFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = E99E2D092A6EE7D600C66FB6 /* countryDataFailure.json */; };
+		E99E2D112A6EEE6200C66FB6 /* SingleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E2D102A6EEE6100C66FB6 /* SingleCellView.swift */; };
 		E9A9884F2A6C23530081FAE6 /* CountriesListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9884E2A6C23530081FAE6 /* CountriesListApp.swift */; };
 		E9A988512A6C23530081FAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A988502A6C23530081FAE6 /* ContentView.swift */; };
 		E9A988532A6C23550081FAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A988522A6C23550081FAE6 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E99E2D072A6EE7D600C66FB6 /* countryDataSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryDataSuccess.json; sourceTree = "<group>"; };
+		E99E2D082A6EE7D600C66FB6 /* emptyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emptyData.json; sourceTree = "<group>"; };
+		E99E2D092A6EE7D600C66FB6 /* countryDataFailure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryDataFailure.json; sourceTree = "<group>"; };
+		E99E2D102A6EEE6100C66FB6 /* SingleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCellView.swift; sourceTree = "<group>"; };
 		E9A9884B2A6C23530081FAE6 /* CountriesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A9884E2A6C23530081FAE6 /* CountriesListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListApp.swift; sourceTree = "<group>"; };
 		E9A988502A6C23530081FAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +58,7 @@
 		E9A988792A6C236D0081FAE6 /* CountriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 		E9A9887A2A6C236D0081FAE6 /* CountryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
 		E9A9887B2A6C236D0081FAE6 /* CountryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		E9A9887F2A6C2C910081FAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E99E2D0D2A6EEA3700C66FB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9A988502A6C23530081FAE6 /* ContentView.swift */,
+				E99E2D102A6EEE6100C66FB6 /* SingleCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E99E2D0F2A6EEA6300C66FB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9A988792A6C236D0081FAE6 /* CountriesViewModel.swift */,
+				E9A9887A2A6C236D0081FAE6 /* CountryResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E9A988422A6C23530081FAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +127,11 @@
 		E9A9884D2A6C23530081FAE6 /* CountriesList */ = {
 			isa = PBXGroup;
 			children = (
-				E9A988782A6C236D0081FAE6 /* Network */,
+				E9A9887F2A6C2C910081FAE6 /* Info.plist */,
 				E9A9884E2A6C23530081FAE6 /* CountriesListApp.swift */,
-				E9A988502A6C23530081FAE6 /* ContentView.swift */,
+				E99E2D0D2A6EEA3700C66FB6 /* View */,
+				E99E2D0F2A6EEA6300C66FB6 /* Model */,
+				E9A988782A6C236D0081FAE6 /* Network */,
 				E9A988522A6C23550081FAE6 /* Assets.xcassets */,
 				E9A988542A6C23550081FAE6 /* Preview Content */,
 			);
@@ -120,6 +149,9 @@
 		E9A9885E2A6C23550081FAE6 /* CountriesListTests */ = {
 			isa = PBXGroup;
 			children = (
+				E99E2D082A6EE7D600C66FB6 /* emptyData.json */,
+				E99E2D092A6EE7D600C66FB6 /* countryDataFailure.json */,
+				E99E2D072A6EE7D600C66FB6 /* countryDataSuccess.json */,
 				E9A9885F2A6C23550081FAE6 /* CountriesListTests.swift */,
 			);
 			path = CountriesListTests;
@@ -137,8 +169,6 @@
 		E9A988782A6C236D0081FAE6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E9A988792A6C236D0081FAE6 /* CountriesViewModel.swift */,
-				E9A9887A2A6C236D0081FAE6 /* CountryResponse.swift */,
 				E9A9887B2A6C236D0081FAE6 /* CountryService.swift */,
 			);
 			path = Network;
@@ -257,6 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99E2D0C2A6EE7D600C66FB6 /* countryDataFailure.json in Resources */,
+				E99E2D0A2A6EE7D600C66FB6 /* countryDataSuccess.json in Resources */,
+				E99E2D0B2A6EE7D600C66FB6 /* emptyData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +311,7 @@
 				E9A9887E2A6C236D0081FAE6 /* CountryService.swift in Sources */,
 				E9A988512A6C23530081FAE6 /* ContentView.swift in Sources */,
 				E9A9884F2A6C23530081FAE6 /* CountriesListApp.swift in Sources */,
+				E99E2D112A6EEE6200C66FB6 /* SingleCellView.swift in Sources */,
 				E9A9887D2A6C236D0081FAE6 /* CountryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +474,7 @@
 				DEVELOPMENT_TEAM = G9Z86K3593;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CountriesList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -469,7 +503,7 @@
 				DEVELOPMENT_TEAM = G9Z86K3593;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CountriesList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

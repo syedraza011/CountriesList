@@ -7,15 +7,34 @@
 
 import Foundation
 enum APIError: Error {
-    
     case invalidUrl
     case invalidResponse
+    case emptyData
+    case serviceUnavailable
     case decodingError
     
-    
+    var description: String {
+        switch self {
+        case .invalidUrl:
+            return "invalid url"
+        case .invalidResponse:
+            return "invalid response"
+        case .emptyData:
+            return "empty data"
+        case .serviceUnavailable:
+            return "service unavailable"
+        case .decodingError:
+            return "decoding error"
+        }
+    }
 }
 
-class CountryService{
+ protocol CountriesServiceProtocol {
+     func fetchCountries () async throws -> [CountryResponse]
+ }
+
+class CountryService: CountriesServiceProtocol{
+   
     
     let urlString = "https://gist.githubusercontent.com/peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json"
     
@@ -30,6 +49,7 @@ class CountryService{
         do {
             return try JSONDecoder().decode([CountryResponse].self, from: data)
         } catch {
+            print(error)
             throw APIError.decodingError
         }
     }
